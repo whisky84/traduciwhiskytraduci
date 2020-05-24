@@ -1,0 +1,64 @@
+{
+  "name": "ritabot",
+  "version": "1.2.0-3",
+  "engines": {
+    "node": "12.10.0"
+  },
+  "description": "Real-Time Interchangeable Translating Assistant bot built using discord.js and Google Translate API.",
+  "main": "src/bot.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/bot",
+    "build": "gulp build",
+    "coveralls": "gulp coveralls",
+    "dev": "gulp watch",
+    "lint": "gulp lint",
+    "finish": "echo \"All Tests Completed Successfully\" && exit 1"
+  },
+  "author": "Group Project",
+  "contributors": [
+    "RitaBot <blank@email.com> (https://github.com/ZyC0R3/RitaBot)"
+  ],
+  "keywords": [
+    "discord",
+    "discordjs",
+    "bot",
+    "translate",
+    "translator"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZyC0R3/RitaBot.git"
+  },
+  "funding": "https://ritabot.org",
+  "homepage": "https://ritabot.org",
+  "bugs": {
+    "url": "https://github.com/ZyC0R3/RitaBot/issues"
+  },
+  "dependencies": {
+    "common-tags": "^1.8.0",
+    "discord.js": "^11.6.3",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "google-translate-api": "github:ZyC0R3/google-translate-api",
+    "iso-639-1": "^2.1.1",
+    "pg": "^7.18.2",
+    "pg-hstore": "^2.3.3",
+    "seconds-converter": "github:AlooAkbar/seconds-converter",
+    "sequelize": "^5.21.5",
+    "sqlite3": "^4.1.1",
+    "webhook-discord": "^3.6.0"
+  },
+  "devDependencies": {
+    "@kollavarsham/gulp-coveralls": "^0.2.12",
+    "braces": "^3.0.2",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-watch": "github:ZyC0R3/gulp-watch"
+  },
+  "directories": {
+    "doc": "docs"
+  }
+}
